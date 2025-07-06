@@ -5,7 +5,7 @@ import requests
 app = Flask(__name__)
 CORS(app)
 
-OPENROUTER_API_KEY = "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"  # ⚠️ À cacher si déploiement
+OPENROUTER_API_KEY = ""  # ⚠️ À cacher si déploiement
 @app.route('/api/Chatbot/ask', methods=['POST'])
 def chatbot_ask():
     try:
